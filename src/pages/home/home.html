@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ToDo List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="usuario.uEmail"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="usuario.uPassword"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+  
+  <div padding>
+    <button ion-button block (click)="login()">Login</button>
+    <button (click)="irARegistro()" style="margin-top: 15px" ion-button block color="light">Registrarse</button>
+  </div>
+  
+</ion-content>

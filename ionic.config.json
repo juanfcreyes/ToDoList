@@ -1,0 +1,14 @@
+{
+  "name": "ToDoList",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/ToDoList",
+      "proxyUrl": "http://localhost:8080/ToDoList"
+    }
+  ]
+}
