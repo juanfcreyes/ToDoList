@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RegistroComponent } from '../registro/registro.component'
+import { NavParams } from 'ionic-angular';
 import { ToDoService } from '../../app/services/todo.service';
 import { ToastController } from 'ionic-angular';
 
@@ -15,7 +14,6 @@ export class TareasComponent implements OnInit {
   tareas:any = [];
   tarea:any = {};
   constructor(private _toDoService: ToDoService,
-              private navCtrl : NavController,
               public navParams: NavParams,
               public toastCtrl:ToastController) { 
     this.userId = navParams.get('user_id');
